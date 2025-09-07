@@ -86,7 +86,6 @@ body {
   gap:20px;
   padding: 60px 20px;
 }
-
 .card {
   background: rgba(255,255,255,0.05);
   padding: 20px;
@@ -96,7 +95,6 @@ body {
   transition: all 0.3s ease;
   text-align: center;
 }
-
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--main-color);
@@ -255,3 +253,20 @@ footer {
   .updates h2, .updates h4 { font-size:1.2rem; }
   .updates p, .updates a { font-size:0.9rem; }
 }
+
+.noticias img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 10px auto; /* centraliza a imagem */
+}
+
+.noticias .card {
+  max-width: 300px;   /* largura máxima */
+  margin: 0 auto;     /* centraliza o card */
+  padding: 15px;
+  border-radius: 12px;
+}
+
+
