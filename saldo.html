@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saldo do Agente - FROGS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="aio.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left" id="user-greeting">Olá, agente!</div>
+    <div class="navbar-center">
+      <img src="319a6a6d-055d-48ef-b7ff-e3ae49dde71a.png" class="logo-frogs" alt="Logo FROGS">
+    </div>
+    <div class="navbar-right">
+      <a href="main.html" class="btn-jornal">🏠 Início</a>
+      <a href="jornal.html" class="btn-jornal">📰 Jornal</a>
+      <a href="saldo.html" class="btn-jornal">💲 Saldo</a>
+      <a href="eventos.html" class="btn-jornal">🎉 Eventos</a>
+    </div>
+  </nav>
+
+  <main style="margin-top:120px; text-align:center; font-family:'Poppins', sans-serif;">
+    <h1 style="color:#292627;">💼 Dados do Agente</h1>
+    <div id="info" style="
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: var(--radius);
+        padding: 25px;
+        max-width: 500px;
+        margin: 30px auto;
+        text-align: left;
+        box-shadow: 0 5px 15px rgba(241, 144, 217, 0.87);
+      ">
+      <p><strong>Usuário:</strong> <span id="user"></span></p>
+      <p><strong>Saldo:</strong> <span id="saldo"></span></p>
+      <p><strong>Emprego:</strong> <span id="emprego"></span></p>
+      <p><strong>Itens Adquiridos:</strong></p>
+      <ul id="itens" style="margin-left:20px;"></ul>
+    </div>
+  </main>
+<script src="env.js"></script>
+  <script>
+    const user = localStorage.getItem("loggedUser");
+    if (!user) {
+      window.location.href = "index.html";
+    }
+
+    const saldo = localStorage.getItem("saldo_" + user) || "R$ 0,00";
+    const emprego = localStorage.getItem("emprego_" + user) || "Desempregado";
+    const itens = JSON.parse(localStorage.getItem("itens_" + user) || "[]");
+
+    document.getElementById("user").textContent = user;
+    document.getElementById("saldo").textContent = saldo;
+    document.getElementById("emprego").textContent = emprego;
+
+    const ul = document.getElementById("itens");
+    if (itens.length === 0) {
+      ul.innerHTML = "<li>Nenhum item adquirido.</li>";
+    } else {
+      itens.forEach(i => {
+        const li = document.createElement("li");
+        li.textContent = i;
+        ul.appendChild(li);
+      });
+    }
+
+    // Atualiza saudação
+    document.getElementById("user-greeting").textContent = `Olá, ${user.charAt(0).toUpperCase() + user.slice(1)}`;
+  </script>
+</body>
+</html>

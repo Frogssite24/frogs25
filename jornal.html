@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornal FROGS</title>
+  <link rel="icon" href="aio.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      font-family: 'Poppins', sans-serif;
+      z-index: 10000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .navbar-left {
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar-left a {
+      background: transparent;
+      border: 1px solid #f8a5c2;
+      color: #f8a5c2;
+      border-radius: 8px;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .navbar-left a:hover {
+      background: #f8a5c2;
+      color: #111;
+    }
+
+    .container {
+      margin-top: 100px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .news-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .news-card h3 {
+      color: var(--main-color);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="main.html">🏠 Início</a>
+      <a href="jornal.html">📰 Jornal</a>
+    </div>
+    <div id="user-greeting">Olá, agente!</div>
+  </nav>
+
+  <div class="container">
+    <h1>📰 Jornal dos FROGS</h1>
+    <p>Aqui você pode ver as notícias, rumores e leaks oficiais do grupo.</p>
+
+    <div class="news-card">
+      <h3>Nova Base Secreta Anunciada!</h3>
+      <p>O grupo FROGS revelou planos para uma nova base subterrânea altamente tecnológica. Fique ligado para mais atualizações!</p>
+    </div>
+
+    <div class="news-card">
+      <h3>Evento Primavera 2025</h3>
+      <p>O evento trouxe novos itens, temas e visuais para o portal dos FROGS. Participe e ganhe recompensas!</p>
+    </div>
+  </div>
+
+  <script>
+    const user = localStorage.getItem("loggedUser");
+    const saldo = localStorage.getItem("saldo_" + user) || "R$ 0";
+    if (!user) window.location.href = "index.html";
+    const name = user.charAt(0).toUpperCase() + user.slice(1);
+    document.getElementById("user-greeting").textContent = `Olá, ${name} | Saldo: ${saldo}`;
+  </script>
+</body>
+</html>
