@@ -88,11 +88,11 @@
 
   <script>
     const user = localStorage.getItem("loggedUser");
-    const saldo = localStorage.getItem("saldo_" + user) || "R$ 0";
     if (!user) window.location.href = "index.html";
     const name = user.charAt(0).toUpperCase() + user.slice(1);
-    document.getElementById("user-greeting").textContent = `Olá, ${name} | Saldo: ${saldo}`;
+    document.getElementById("user-greeting").textContent = `Olá, ${name};
   </script>
 </body>
 </html>
+
 
