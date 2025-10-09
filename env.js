@@ -7827,9 +7827,16 @@
     itens: []
   },
   "CoSbrFroggy": {
-    saldo: "$ 0,00",
-    emprego: "Desempregado",
-    itens: []
+    saldo: "65 Frog Leks, ? Frog Petals, ? Lulu Coins",
+    emprego: "Dono da Doceria do Neo Froggy e Co-Sbr",
+    itens: ["Bonecos: Boneco Gatinho da Margarete, Boneco da Margarete, Boneco do Marco, Boneco Robótico do Marco, Boneco da Marga, Boneco Rabanete, Boneco Milho do Obeso, Boneco Tomate da Marga, Boneco Cenoura do Marco e Boneco do Obeso, Boneco Cavaleiro da Margarete e Boneco Gosmento do Obeso.
+
+Contas: Lilic, Passe, Comum, Enket e Perita.
+
+Comidas: Suco de Detox da Marga, Brigadeiro da Marga, Lasanha do Obeso, Sushi da Margarete, Pizza do Marco, Torta de Abacaxi da Marga, Escondidinho do Obeso, Risoto da Margarete, Feijoada do Marco, Drink de Abacaxi da Marga, Cachaça do Obeso, Bolo de Morango da Margarete, Hambúrguer do Marco, Linguiça da Marca, Chocotone do Obeso, Macaron da Margarete, Pão Alho do Marco, Sonho do Obeso, Gelatina da Margarete, Refrigerante do Marco, Pão de Queijo do Obeso, Leitão do Obeso e Chopp do Marco.
+
+Cartões: Cartão Frog, Cartão Bronze Frog, 
+  Quartzo Frog, Cartão Ametista Frog, Cartão Ferro Frog, Cartão Obsidiana Frog, Cartão Rubi Frog, Cartão Ouro Frog, Cartão Esmeralda Frog e Cartão Diamante Frog."]
   },
   "CooSbrFroga": {
     saldo: "$ 0,00",
@@ -7842,9 +7849,11 @@
     itens: []
   },
   "Froglex": {
-    saldo: "$ 0,00",
-    emprego: "Desempregado",
-    itens: []
+    saldo: "37 Frog Leks, 150 frog petals, 60 Lulu coins",
+    emprego: "Editor do Canva",
+    itens: ["Bonecos: Boneco do Obeso, Boneco Grudento do Obeso e Boneco Robótico do Marco
+Comidas: Hambúrguer do Marco, Pão de Queijo do Obeso, Cachaça do Obeso, Drink de Abacaxi da Marga e o Bolo de Morango da Margarete
+Cartões: Cartão Iniciante Frog, Cartão Frog e Cartão Ouro Frog"]
   },
   "Frogatelli": {
     saldo: "$ 0,00",
@@ -7862,9 +7871,14 @@
     itens: []
   },
   "Frogjope": {
-    saldo: "$ 0,00",
-    emprego: "Desempregado",
-    itens: []
+    saldo: "857 Frog Leks, 500 frog petals, 0 lulu coins.",
+    emprego: "Editor do Canva",
+    itens: Boneco do robótico do Marco, Boneco da Margarete, Boneco Gosmento do Obeso, Boneco Gatinho da Margarete. 
+    Vitoria régia. De comida: Feijoada do Marco, Pao de queijo do Obeso, Bolo de morango, Drink de abacaxi, 
+    Cachaça do Obeso, Hambúrguer do Marco, Pizza do Marco, Sushi, Sonho, Refrigerante, Brigadeiro, Suco Detox, Gelatina. 
+    Doceria: Banana Split, Picolé, Pipoca, Bubble tea, Raspadinha, Doce de Leite, Goiabada, Croissant, Torta de maça, Donut, Churros, Macaron, 
+    Cupcake, Algodão Doce, Cookie, Bolo de Chocolate, Chocolate Branco, Bom bom. Contas: Conta Comum. Cartoes: Cartão Frog, Cartão Iniciante Frog, 
+    Frog Sunset, Universal, Vortex, Eclipse, Aurora.
   },
   "Froramos": {
     saldo: "$ 0,00",
@@ -8034,4 +8048,5 @@
   } else {
     init();
   }
+
 })();
