@@ -67,28 +67,24 @@
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-left">
-      <a href="main.html">🏠 Início</a>
-      <a href="jornal.html">📰 Jornal</a>
+ <nav class="navbar">
+    <div class="navbar-left" id="user-greeting">Olá, agente!</div>
+    <div class="navbar-center">
+      <img src="Design_sem_nome-removebg-preview.png" class="logo-frogs" alt="Logo FROGS">
     </div>
-    <div id="user-greeting">Olá, agente!</div>
+    <div class="navbar-right">
+      <a href="main.html" class="btn-jornal">🏠 Início</a>
+      <a href="jornal.html" class="btn-jornal">📰 Jornal</a>
+      <a href="saldo.html" class="btn-jornal">💲 Saldo</a>
+      <a href="eventos.html" class="btn-jornal">🎉 Eventos</a>
+    </div>
   </nav>
 
   <div class="container">
     <h1>📰 Jornal dos FROGS</h1>
     <p>Aqui você pode ver as notícias, rumores e leaks oficiais do grupo.</p>
 
-    <div class="news-card">
-      <h3>Nova Base Secreta Anunciada!</h3>
-      <p>O grupo FROGS revelou planos para uma nova base subterrânea altamente tecnológica. Fique ligado para mais atualizações!</p>
-    </div>
-
-    <div class="news-card">
-      <h3>Evento Primavera 2025</h3>
-      <p>O evento trouxe novos itens, temas e visuais para o portal dos FROGS. Participe e ganhe recompensas!</p>
-    </div>
-  </div>
+   
 
   <script>
     const user = localStorage.getItem("loggedUser");
@@ -99,3 +95,4 @@
   </script>
 </body>
 </html>
+
