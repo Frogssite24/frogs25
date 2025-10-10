@@ -1,129 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site dos FROGS - v1.3</title>
-    <link rel="icon" href="aio.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<section class="hero" id="hero">
-    <img src="logo_spring.png" width="500" height="300" alt="Logo dos FROGS" class="logo">        
-  <h2>O site oficial</h2>
-  <p>Aqui temos todas as atualizações da Wiki, site, grupo entre outros</p>
-  <button class="btn btn-main" onclick="scrollToFeatures()">Ver Recursos</button>
-</section>
-
-<section class="features" id="features">
-  <div class="card">
-    <h3>Indústria</h3>
-    <p>Temos diversas coisas e itens em nossa Indústria.</p>
-    <img src="industria_spring.png" width="380" height="370" alt="Indústria">
-    <br>
-    <a href="https://www.canva.com/design/DAGw0WrWjaA/M1VvKenJVPvRhMvGxS682A/edit">Link para a Indústria</a>
-  </div>
-  <div class="card">
-    <h3>Portal</h3>
-    <p>Onde tudo acontece e é anunciado, notícias, eventos, códigos de promoção, fique ligado!</p>
-    <img src="portal_spring.jpeg" width="380" height="370" alt="Portal">
-    <br>
-    <a href="///">⚠️ Link off, para entrar no portal fale c/ SBR: andreheiamarag@hotmail.com</a>
-  </div>
-  <div class="card">
-    <h3>Empresa</h3>
-    <p>Onde os FROGS assinam um contrato de acordo com as profissões disponíveis, para assinar seu trabalho contate o SBR.</p>
-    <img src="empresa_spring.png" width="380" height="370" alt="Empresa">
-    <br>
-    <a href="https://www.canva.com/design/DAGxUNMB8Ic/CeQt6h6mDGfzo_yYNbJBRg/edit">Link para a Empresa</a>
-  </div>
-  <div class="card">
-    <h3>(NEW) Papelaria</h3>
-    <p>Onde se pode ver jornais, colocar códigos, ver programas e ver leaks.</p>
-    <img src="papelaria_spring.png" width="380" height="370" alt="Papelaria">
-    <br>
-    <a href="about:blank">Problema com o link</a>
-  </div>
-</section>
-
-<section class="nomes">
-  <h2>Nomes dos FROGS</h2>
-  <ul>
-    <li>@André Amaral ᓚᘏᗢ é Sbr Frog (Líder e criador do grupo)</li>
-    <li>@Arthur Simão  ૮( ˃ ꒳ ˂)ა /づ- é Co-Sbr Froggy (Assistente do Sbr)</li>
-    <li>@Laura Feijó é Coo-Sbr Froga (Co-Assintente do Sbr)</li>
-    <li>@⋆.˚✮miranda✮˚.⋆ é Fralight (Participante do grupo)</li>
-    <li>@Clara Gagliotto.02 é Frogolita (Participante do grupo)</li>
-    <li>@Pedro Schmidt Lopes é Froglex (Participante do grupo)</li>
-    <li>@Murilo Moratelli é Frogratelli (Participante do grupo)</li>
-    <li>@João Pedro Melozzi Rossetto é Frogmotor (Participante do grupo)</li>
-    <li>@MIGUEL JOSE ALMEIDA MACHADO é Froguel (Participante do grupo)</li>
-    <li>@João Pedro   ^. .^₎⟆ é Frogjope (Participante do grupo)</li>
-    <li>@Joaquim Ramos Machado é Froramos (Participante do grupo)</li>
-    <li>@Júlia Rocha Lourenço é Frogju (Participante do grupo)</li>
-    <li>@Valentina Miller é Froguita (Participante do grupo)</li>
-    <li>@Sofia Alves ❤️ é Frage (Participante do grupo)</li>
-    <li>@Laura Duarte é Franela (Participante do grupo)</li>
-  </ul>
-</section>
-
-<section class="noticias">
-  <div class="card">
-    <h2>NOTÍCIAS</h2>
-    <h4>NOVA LOJA ABERTA!</h4>
-    <p>Venha visitar a nova Doceria do Neo Froggy (1.0)!</p>
-    <img src="download.png" width="30" height="20" alt="Doceria">
-  </div>
-</section>
-
-<section class="updates">
-   <h2>Atualizações do Site</h2>
-    <h4>Update v1.0 - 04/09/2025</h4>
-    <p>Esta foi a primeira versão do site, com recursos básicos e informações sobre o grupo. Contando com a adição de personalização de temas do site e adição de novos recursos e a fundação do mesmo.</p>
-    <h4>Update v1.1 - 07/09/2025</h4>
-    <p>Esta versão corrigiu bugs e problemas de clean code no site, bem como a adição da seção "Notícias" e Seção da Doceria do Neo</p>
-    <h4>Update v1.2 - 26/09/2025</h4>
-    <p>Esta update trouxe novas imagens e up-to-dates de primavera com a adição do card da Papelaria. Trouxe também o tema rosa spring e correção de bugs
-        e erros de tags que atrapalhavam o funcionamento do site.</p>
-    <hr>
-    <h2>Atualizações do grupo</h2>
-    <a href="https://frogsbr.fandom.com/pt-br/wiki/Atualiza%C3%A7%C3%B5es">Link para as atualizações do grupo</a>
-</section>
-<br>
-<footer id="footer">
-  © 2025 FROGS. Feito por Franela.
-</footer>
-
-<div id="customizer">&#9881;</div>
-
-<div id="customizer-panel">
-  <h4>Customizador</h4>
-  <label>Cor Principal</label>
-  <input type="color" id="colorPicker" value="#f8a5c2">
-  
-  <label>Fundo</label>
-  <input type="color" id="bgPicker" value="#fff">
-  
-  <label>Texto</label>
-  <input type="color" id="textPicker" value="#333">
-  
-  <label>Cantos (px)</label>
-  <input type="number" id="radiusPicker" value="16" min="0" max="50">
-  
-  <label>Fonte</label>
-  <select id="fontPicker">
-    <option value="Arial, sans-serif">Arial</option>
-    <option value="'Segoe UI', sans-serif">Segoe UI</option>
-    <option value="'Roboto', sans-serif">Roboto</option>
-    <option value="'Poppins', sans-serif" selected>Poppins</option>
-  </select>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -184,12 +58,12 @@
 <body>
   <!-- ===== NAVBAR FIXA ===== -->
 <nav class="navbar">
-  <div class="navbar-left" id="user-greeting">Olá, agente!</div>
+  <div class="navbar-left" id="user-greeting">Bem-vindo (a)!</div>
   <div class="navbar-center">
     <img src="Design_sem_nome-removebg-preview.png" alt="Logo FROGS" class="logo-frogs">
   </div>
   <div class="navbar-right">
-    <a href="jornal.html" class="btn-jornal">📰 Jornal</a>
+    <a href="jornal.html" class="btn-jornal">📰 Jornal </a>
     <br>
     <a href="saldo.html" class="btn-jornal">💲 Saldo</a>
     <br>
@@ -233,7 +107,14 @@
     <p>Onde se pode ver jornais, colocar códigos, ver programas e ver leaks.</p>
     <img src="papelaria_spring.png" width="380" height="370" alt="Papelaria">
     <br>
-    <a href="https://drive.google.com/file/d/1EULGHqmBbMxw9Jlax6w0Xhc3zMxMjcCY/view?usp=sharing">Link para a Papelaria</a>
+    <a href="about:blank">Problema com o link</a>
+  </div>
+   <div class="card">
+    <h3>Loteria</h3>
+    <p>Onde se pode ver jornais, colocar códigos, ver programas e ver leaks.</p>
+    <img src="papelaria_spring.png" width="380" height="370" alt="Papelaria">
+    <br>
+    <a href="about:blank">Problema com o link</a>
   </div>
 </section>
 
@@ -278,7 +159,7 @@
         e erros de tags que atrapalhavam o funcionamento do site.</p>
            <h4>Update v1.3 - 09/10/2025</h4>
     <p>Uma das maiores updates do site. A adição de sistema de login individual de cada usuário, conta própria, adição de faixada em cima da página, novos botões na faixada,
-        criação de páginas próprias para cada setor do grupo, remoção do customizer, adição de novos efeitos visuais e adição de novos conteúdos.
+        criação de páginas próprias para cada setor do grupo, remoção do customizer, adição de novos efeitos visuais, adição de novos conteúdos e correção de bugs críticos da produção.
     </p>
     <hr>
     <h2>Atualizações do grupo</h2>
@@ -294,19 +175,7 @@
   <div id="customizer-panel">
     <!-- conteúdo original -->
   </div>
-
+  <script src="env.js"></script>
   <script src="script.js"></script>
-  <script>
-    const loggedUser = localStorage.getItem("loggedUser");
-
-    if (!loggedUser) {
-      window.location.href = "index.html";
-    } else {
-      const name = loggedUser.charAt(0).toUpperCase() + loggedUser.slice(1);
-      document.getElementById("user-greeting").textContent = `Olá, ${name}!`;
-    }
-  </script>
 </body>
 </html>
-
-
