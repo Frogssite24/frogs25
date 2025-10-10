@@ -4,95 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jornal FROGS</title>
-  <link rel="icon" href="aio.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="aio.png" type="image/png">
   <style>
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #222;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 30px;
-      font-family: 'Poppins', sans-serif;
-      z-index: 10000;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    .jornal-container {
+      max-width: 800px;
+      margin: 100px auto 50px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      font-family: 'Georgia', serif;
     }
-
-    .navbar-left {
-      display: flex;
-      gap: 15px;
-    }
-
-    .navbar-left a {
-      background: transparent;
-      border: 1px solid #f8a5c2;
-      color: #f8a5c2;
-      border-radius: 8px;
-      padding: 6px 14px;
-      cursor: pointer;
-      font-weight: 500;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-
-    .navbar-left a:hover {
-      background: #f8a5c2;
-      color: #111;
-    }
-
-    .container {
-      margin-top: 100px;
+    
+    .jornal-header {
       text-align: center;
-      padding: 20px;
+      border-bottom: 3px double #333;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
     }
-
-    .news-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
-      padding: 20px;
-      max-width: 600px;
-      margin: 20px auto;
-      text-align: left;
+    
+    .jornal-titulo {
+      font-size: 2.5rem;
+      color: #d63384;
+      margin: 0;
+      font-weight: bold;
     }
-
-    .news-card h3 {
-      color: var(--main-color);
+    
+    .jornal-subtitulo {
+      font-size: 1rem;
+      color: #666;
+      margin: 5px 0;
+    }
+    
+    .jornal-data {
+      font-size: 0.9rem;
+      color: #888;
+      font-style: italic;
+    }
+    
+    .noticia {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .noticia-titulo {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      border-left: 4px solid #f78fb3;
+      padding-left: 15px;
+    }
+    
+    .noticia-data {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    
+    .noticia-texto {
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+    
+    .destaque {
+      background: #fff5f7;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #e84393;
+      margin: 20px 0;
+    }
+    
+    .editorial {
+      font-style: italic;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
- <nav class="navbar">
-    <div class="navbar-left" id="user-greeting">Olá, agente!</div>
+  <nav class="navbar">
+    <div class="navbar-left" id="user-greeting">Bem-vindo(a)!</div>
     <div class="navbar-center">
       <img src="Design_sem_nome-removebg-preview.png" class="logo-frogs" alt="Logo FROGS">
     </div>
     <div class="navbar-right">
       <a href="main.html" class="btn-jornal">🏠 Início</a>
-      <a href="jornal.html" class="btn-jornal">📰 Jornal</a>
-      <a href="saldo.html" class="btn-jornal">💲 Saldo</a>
+      <a href="saldo.html" class="btn-jornal">💰 Saldo</a>
       <a href="eventos.html" class="btn-jornal">🎉 Eventos</a>
     </div>
   </nav>
 
-  <div class="container">
-    <h1>📰 Jornal dos FROGS</h1>
-    <p>Aqui você pode ver as notícias, rumores e leaks oficiais do grupo.</p>
+  <div class="jornal-container">
+    <header class="jornal-header">
+      <h1 class="jornal-titulo">FROGS TIMES</h1>
+      <p class="jornal-subtitulo">O Jornal Oficial da Organização FROGS</p>
+      <p class="jornal-data">Edição Especial • Outubro 2025</p>
+    </header>
 
-   
+    <article class="noticia">
+      <h2 class="noticia-titulo">NOVA DOCERIA É INAUGURADA NO BAIRRO FROGS</h2>
+      <p class="noticia-data">📰 NOTÍCIA EXCLUSIVA • 15 de Outubro</p>
+      <p class="noticia-texto">
+        Foi inaugurada nesta semana a "Doceria do Neo Froggy", um novo estabelecimento que promete revolucionar 
+        o setor de confeitaria na região. Localizada no coração do Distrito FROGS, a doceria oferece uma variedade 
+        de sobremesas artesanais, incluindo os famosos brigadeiros da Marga e os bolos da Margarete.
+      </p>
+      <div class="destaque">
+        <strong>🎯 Destaque:</strong> A doceria já se tornou ponto de encontro dos agentes após o expediente.
+      </div>
+    </article>
 
-  <script>
-    const user = localStorage.getItem("loggedUser");
-    if (!user) window.location.href = "index.html";
-    const name = user.charAt(0).toUpperCase() + user.slice(1);
-    document.getElementById("user-greeting").textContent = `Olá, ${name};
-  </script>
+    <article class="noticia">
+      <h2 class="noticia-titulo">SISTEMA DE PAGAMENTOS FROG LEKS É OFICIALIZADO</h2>
+      <p class="noticia-data">💲 ECONOMIA • 12 de Outubro</p>
+      <p class="noticia-texto">
+        A moeda oficial FROG LEKS foi implementada com sucesso em todo o sistema. Agentes já podem realizar 
+        transações, acumular saldo e participar da economia interna. Os cartões de crédito Frog (Bronze, Prata, 
+        Ouro e Diamante) estão em fase final de distribuição.
+      </p>
+      <p class="noticia-texto">
+        <strong>Cotização atual:</strong> 1 Frog Lek = R$ 1,00 (taxa fixa)
+      </p>
+    </article>
+
+    <article class="noticia">
+      <h2 class="noticia-titulo">INDÚSTRIA FROGS EXPANDE LINHA DE PRODUÇÃO</h2>
+      <p class="noticia-data">🏭 PRODUÇÃO • 10 de Outubro</p>
+      <p class="noticia-texto">
+        A divisão industrial dos FROGS anunciou a expansão de sua linha de bonecos colecionáveis. Novos modelos 
+        incluindo o "Boneco Robótico do Marco" e "Boneco Cavaleiro da Margarete" estão em produção acelerada. 
+        A previsão é que cheguem ao mercado ainda este mês.
+      </p>
+    </article>
+
+    <article class="noticia">
+      <h2 class="noticia-titulo">PAPELARIA OFICIAL TEM NOVO PORTAL ONLINE</h2>
+      <p class="noticia-data">📋 COMUNICAÇÃO • 8 de Outubro</p>
+      <p class="noticia-texto">
+        O setor de comunicação lançou o novo portal da Papelaria Oficial, onde agentes podem acessar jornais 
+        atualizados, códigos promocionais e programas exclusivos. A interface foi totalmente reformulada para 
+        melhor experiência do usuário.
+      </p>
+    </article>
+
+    <article class="noticia">
+      <h2 class="noticia-titulo">EVENTO DE PRIMAVERA ATINGE RECORDE DE PARTICIPAÇÃO</h2>
+      <p class="noticia-data">🌸 EVENTOS • 5 de Outubro</p>
+      <p class="noticia-texto">
+        O Evento de Primavera 2025 superou todas as expectativas, com mais de 95% de participação dos agentes. 
+        As decorações temáticas e missões especiais foram elogiadas pela comunidade. Próximos eventos sazonais 
+        já estão em planejamento.
+      </p>
+    </article>
+
+    <div class="editorial">
+      <h3 style="color:#d63384;">📝 Editorial</h3>
+      <p>
+        "Estamos vivendo um momento de crescimento extraordinário na organização FROGS. Cada nova conquista 
+        reflete o comprometimento de nossos agentes. Sigamos unidos nesta jornada!"
+      </p>
+      <p style="text-align:right;margin-top:10px;">
+        <strong>— Redação FROGS TIMES</strong>
+      </p>
+    </div>
+
+    <footer style="text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid #eee;color:#888;">
+      <p>FROGS TIMES • Jornal Oficial • Edição #025</p>
+      <p style="font-size:0.8rem;">Distribuição exclusiva para agentes autorizados</p>
+    </footer>
+  </div>
+
+  <script src="env.js"></script>
 </body>
 </html>
-
-
